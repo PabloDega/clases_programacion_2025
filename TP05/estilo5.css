@@ -1,0 +1,24 @@
+#parrafo1, #div1, #a1{
+    color: green;
+}
+#div2{
+    color: blue;
+}
+#div2 p{
+    color: orange;
+}
+#div2 p b{
+    color: red;
+}
+#div2 p b a{
+    color: green;
+}
+#div3{
+    color: cyan;
+}
+#div3 > p{
+    color: red;
+}
+#div3 > div > p{
+    color: green;
+}
