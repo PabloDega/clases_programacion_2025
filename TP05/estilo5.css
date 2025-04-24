@@ -22,3 +22,50 @@
 #div3 > div > p{
     color: green;
 }
+.colorPrimario{
+    color: orange;
+}
+.colorSecundario{
+    color: red;
+}
+.fondoPrimario{
+    background-color: yellow;
+}
+.fondoSecundario{
+    background-color: red;
+    color: white;
+}
+.textoGrande{
+    font-size: x-large;
+}
+.textoChico{
+    font-size: x-small;
+}
+#pseudo{
+    background-color: blue;
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+#pseudo:hover{
+    background-color: green;
+}
+#pseudo:active{
+    background-color: red;
+}
+#div4 > div{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: inline-block;
+}
+#div4 div:first-child{
+    background-color: red;
+}
+#div4 div:last-child{
+    background-color: yellow;
+}
+#div4 div:nth-child(7){
+    background-color: blue;
+}
