@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+#contenedor1{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#contenedor1 img{
+    width: 100px;
+}
+#contenedor1 #imgAlien{
+    width: 300px;
+}
+#contenedor2{
+    background-color: orange;
+    text-align: center;
+}
+#contenedor2 img{
+    width: 200px;
+}
+#contenedor3 img{
+    width: 150px;
+}
+#contenedor3 #edicion1{
+    filter: grayscale(100%);
+}
+#contenedor3 #edicion2{
+    filter: blur(3px);
+}
+#contenedor3 #edicion3{
+    filter: opacity(20%);
+}
+#contenedor3 #edicion4{
+    filter: sepia(100%);
+}
+#contenedor3 #edicion5{
+    filter: invert(100%);
+}
+#contenedor4{
+    text-align: center;
+    background-color: burlywood;
+}
+#contenedor4 img{
+    width: 200px;
+    /* border: solid 4px brown; */
+    border-radius: 20px;
+}
+#contenedor5 img{
+    width: 200px;
+    margin: 16px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#contenedor5 img:hover{
+    filter: grayscale(0%);
+    width: 232px;
+    margin: 0;
+}
