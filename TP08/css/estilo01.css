@@ -1,0 +1,29 @@
+.caja{
+    padding: 16px;
+    display: block;
+    width: 500px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+h2{
+    margin: 0;
+}
+#color1{
+    background-color: blue;
+    color: white;
+    border: solid 5px darkred;
+    outline: solid 3px darkorange;
+    outline-offset: 5px;
+}
+#color2{
+    background-color: rgb(133, 216, 9);
+    color: rgb(8, 93, 8);
+}
+#color3{
+    background-color:rgba(40, 216, 84, 0.3);
+    transform: translateY(-50px);
+}
+#color4{
+    background-color: #00FF00;
+    color: #6c1616c2;
+}
