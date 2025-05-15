@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 h2{
     margin: 0;
 }
@@ -34,4 +36,17 @@ h2{
 }
 #texto3:hover{
     white-space: wrap;
-}1
+}
+#texto4{
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: lightsalmon;
+}
+#texto5{
+    background-color: lightskyblue;
+    column-count: 2;
+    column-gap: 25px;
+    column-rule: solid 1px black;
+}
+#texto5 h2{
+    column-span: all;
+}
