@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: rgb(1, 14, 31);
     padding: 2em;
+    min-height: 400vh;
 }
 h1, h2{
     color: white;
@@ -25,11 +26,28 @@ h1, h2{
     position: relative;
 }
 #relativo:hover{
-    top: 25px;
-    left: 25px;
+    top: -25px;
+    left: -25px;
 }
 #fijo{
     position: fixed;
     bottom: 0;
     right: 0;
+}
+#pegajoso{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    z-index: 2;
+}
+#absoluta{
+    background-color: darkgoldenrod;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+#padreRelativo{
+    position: relative;
 }
