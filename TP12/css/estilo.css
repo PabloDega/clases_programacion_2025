@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    background-color: rgb(58, 160, 215);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contenedor{
+    background-color: white;
+    padding: 0 2em;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+header{
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(20, 87, 123);
+}
+header img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+}
+nav{
+    background-color: rgb(20, 87, 123);
+    padding: 0 2em;
+    position: sticky;
+    top: 0;
+    margin: 1em 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+nav a:hover{
+    background-color: rgb(8, 45, 64);
+}
+main{
+    font-size: 0;
+}
+main span{
+    font-size: 1rem;
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+main img{
+    width: 38%;
+    margin-left: 2%;
+}
+#accion{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 1.6em;
+    background-color: rgb(20, 87, 123);
+    padding: 1em;
+    color: white;
+}
+#accion a{
+    width: fit-content;
+    background-color: white;
+    color: rgb(20, 87, 123);
+    text-decoration: none;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    margin-left: 0.5em;
+}
+#accion a:hover{
+    background-color: rgb(8, 45, 64);
+    color: white;
+}
+.testimonios{
+    margin: 2rem 0;
+    font-size: 0;
+    display: block;
+}
+.testimonio{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0 1em;
+    vertical-align: top;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.testimonio img{
+    width: 125px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.testimonio:hover{
+    filter: grayscale(0%);
+}
+footer{
+    background-color: darkgray;
+    padding: 0.5em 2em;
+    position: relative;
+    left: -2em;
+    width: 100%;
+    margin-top: 2em;
+}
+footer img{
+    width: 50px;
+    vertical-align: middle;
+}
+h1{
+    border-bottom: 3px solid rgb(20, 87, 123);
+    margin: 0 0 1em 0;
+}
+#sedeTxt{
+    margin-bottom: 2em;   
+}
+form#formInscripcion{
+    max-width: 400px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 15px;
+    min-width: min-content;
+}
+form#formInscripcion span{
+    display: block;
+    margin: 1em 0;
+}
+form#formInscripcion span label{
+    display: inline-block;
+    min-width: 100px;
+    border-bottom: 1px solid rgb(20, 87, 123);
+}
+form#formInscripcion input{
+    padding: 0.3em;
+}
+form#formInscripcion input:focus, form#formInscripcion select:focus{
+    outline: 2px solid rgb(20, 87, 123);
+    border: none;
+}
+form#formInscripcion .formBtn{
+    background-color: rgb(58, 160, 215);
+    border: 0;
+    padding: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+form#formInscripcion .formBtn:focus{
+    outline: none;
+}
