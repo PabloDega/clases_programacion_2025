@@ -1,0 +1,68 @@
+.caja{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    padding: 1em;
+    box-sizing: border-box;
+}
+#transicion1{
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#transicion1:hover{
+    width: 500px;
+    background-color: green;
+}
+#transicion2{
+    transition: 5s, width 1s, height 10s;
+}
+#transicion2:hover{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+#transicion3{
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+#transicion3:hover{
+    width: 700px;
+    background-color: crimson;
+}
+.box{
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    font-size: 0;
+}
+.subBox{
+    background-color: blue;
+    height: 50px;
+    width: 5%;
+    display: inline-block;
+    margin-top: 100px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+.subBox:hover{
+    height: 100px;
+    margin-top: 50px;
+}
+.espacio{
+    background-color:black;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.espacio img{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    transition: 1s;
+}
+.espacio:hover img{
+    bottom: 600px;
+}
