@@ -1,0 +1,87 @@
+#caja1{
+    background-color: red;
+    font-size: 2em;
+    padding: 1em;
+    @media(width > 1000px){
+        background-color: aqua;
+    };
+    @media(width < 800px){
+        display: none;
+    }
+    @media print{
+        display: none;
+    }
+}
+
+
+#caja2{
+    background-color: aqua;
+    font-size: 2em;
+    padding: 1em;
+}
+
+@media screen and (width > 600px){
+    #caja2{
+        display: none;
+    }
+}
+.ejercicio div{
+    background-color: green;
+    padding: 0.5em;
+    font-weight: 600;
+}
+@media(width < 100px){
+    #ejercicio1{
+        display: none;
+    }
+}
+#ejercicio1{
+    @media(width < 100px){
+        display: none;
+    }
+}
+#ejercicio2{
+    @media(width < 200px){
+        display: none;
+    }
+}
+#ejercicio3{
+    @media(width < 300px){
+        display: none;
+    }
+}
+#ejercicio4{
+    @media(width < 400px){
+        display: none;
+    }
+}
+#ejercicio5{
+    @media(width < 500px){
+        display: none;
+    }
+}
+#ejercicio6{
+    @media(width < 600px){
+        display: none;
+    }
+}
+#ejercicio7{
+    @media(width < 700px){
+        display: none;
+    }
+}
+#ejercicio8{
+    @media(width < 800px){
+        display: none;
+    }
+}
+#ejercicio9{
+    @media(width < 900px){
+        display: none;
+    }
+}
+#ejercicio10{
+    @media(width < 1000px){
+        display: none;
+    }
+}

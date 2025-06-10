@@ -1,0 +1,82 @@
+.cajas div{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 2px solid black;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+#caja4{
+    background-color: aqua;
+    flex-grow: 1;
+    order: -20;
+}
+#caja5{
+    background-color: blueviolet;
+    flex-grow: 3;
+    order: -1;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+}
+nav a:hover{
+    background-color: darkorange;
+}
+nav{
+    display: flex;
+    background-color: orange;
+}
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 700px;
+}
+#contenedor header img{
+    width: 90px;
+}
+#contenedor header{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    background-color: green;
+}
+#contenedor nav{
+    background-color: darkgreen;
+    color: white;
+}
+#contenedor main{
+    display: flex;
+    gap: 1em;
+}
+#contenedor main img{
+    width: 30%;
+    height: fit-content;
+}
+#contenedor footer{
+    background-color: darkgreen;
+    color: white;
+    font-weight: 600;
+    padding: 1em;
+}
