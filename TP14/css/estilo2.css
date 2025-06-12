@@ -1,87 +1,139 @@
-#caja1{
+#caja1 {
     background-color: red;
     font-size: 2em;
     padding: 1em;
-    @media(width > 1000px){
+
+    @media(width > 1000px) {
         background-color: aqua;
-    };
-    @media(width < 800px){
+    }
+
+    ;
+
+    @media(width < 800px) {
         display: none;
     }
-    @media print{
+
+    @media print {
         display: none;
     }
 }
 
 
-#caja2{
+#caja2 {
     background-color: aqua;
     font-size: 2em;
     padding: 1em;
 }
 
-@media screen and (width > 600px){
-    #caja2{
+@media screen and (width > 600px) {
+    #caja2 {
         display: none;
     }
 }
-.ejercicio div{
+
+.ejercicio div {
     background-color: green;
     padding: 0.5em;
     font-weight: 600;
 }
-@media(width < 100px){
-    #ejercicio1{
+
+@media(width < 100px) {
+    #ejercicio1 {
         display: none;
     }
 }
-#ejercicio1{
-    @media(width < 100px){
+
+#ejercicio1 {
+    @media(width < 100px) {
         display: none;
     }
 }
-#ejercicio2{
-    @media(width < 200px){
+
+#ejercicio2 {
+    @media(width < 200px) {
         display: none;
     }
 }
-#ejercicio3{
+
+#ejercicio3 {
+    @media(width < 300px) {
+        display: none;
+    }
+}
+
+#ejercicio4 {
+    @media(width < 400px) {
+        display: none;
+    }
+}
+
+#ejercicio5 {
+    @media(width < 500px) {
+        display: none;
+    }
+}
+
+#ejercicio6 {
+    @media(width < 600px) {
+        display: none;
+    }
+}
+
+#ejercicio7 {
+    @media(width < 700px) {
+        display: none;
+    }
+}
+
+#ejercicio8 {
+    @media(width < 800px) {
+        display: none;
+    }
+}
+
+#ejercicio9 {
+    @media(width < 900px) {
+        display: none;
+    }
+}
+
+#ejercicio10 {
+    @media(width < 1000px) {
+        display: none;
+    }
+}
+
+nav {
+    background-color: lightsalmon;
+    display: flex;
+    @media(width < 400px) {
+        flex-direction: column;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
     @media(width < 300px){
         display: none;
     }
 }
-#ejercicio4{
-    @media(width < 400px){
-        display: none;
-    }
+
+nav a:hover {
+    background-color: salmon;
 }
-#ejercicio5{
-    @media(width < 500px){
-        display: none;
-    }
-}
-#ejercicio6{
-    @media(width < 600px){
-        display: none;
-    }
-}
-#ejercicio7{
-    @media(width < 700px){
-        display: none;
-    }
-}
-#ejercicio8{
-    @media(width < 800px){
-        display: none;
-    }
-}
-#ejercicio9{
-    @media(width < 900px){
-        display: none;
-    }
-}
-#ejercicio10{
-    @media(width < 1000px){
+
+nav #hamburguesa{
+    font-size: 1.4em;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    @media(width > 300px){
         display: none;
     }
 }
