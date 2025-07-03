@@ -23,12 +23,12 @@ console.log(typeof(indefinido));
 console.log(typeof(array));
 console.log(typeof(objeto));
 
-let numA = "pablo";
+let numA = "22";
 numA = Number(numA);
 let numB = 30;
 console.log(numA + numB);
 
-let valorPi = "3.14159 texto de mas";
+let valorPi = '3.14159 asdasdasda asd as d';
 console.log(valorPi, typeof(valorPi));
 
 let valorNum = Number(valorPi);
