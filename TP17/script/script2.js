@@ -1,9 +1,8 @@
-let miVariable = "Info";
+let miVariable = 1234;
 
 console.log(miVariable);
 
 miVariable = 558;
-
 console.log(miVariable);
 
 const apellido = "Deganis";

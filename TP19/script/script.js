@@ -65,8 +65,8 @@ const restar = (a, b) => a - b;
 const dividir = (a, b) => a / b;
 const multiplicar = (a, b) => a * b;
 
-console.log(multiplicar(10, 7));
+console.log(restar(20, 80));
 
 const calculadora = (a, b, cb) => cb(a, b);
 
-console.log(calculadora(20, 80, multiplicar));
+console.log(calculadora(20, 80, restar));
