@@ -29,3 +29,27 @@ numeros.forEach((data, i) => {
 });
 
 console.log(numeros);
+
+console.clear();
+
+//let colores = ["rojos", "naranja", "amarillo", "verde", "azul", "violeta"];
+//let numeros = [2, 9, 12, 5, 8, 3];
+
+// Metodo find()
+/* let query = colores.find((dato) => {
+    return dato == "azul";
+}); */
+let query = colores.find(dato => dato == "verde");
+console.log(query);
+
+let queryIndex = colores.findIndex(dato => dato == "blanco");
+console.log(queryIndex);
+
+// Metodo reduce()
+let total = numeros.reduce((acumulador, numero) => acumulador + numero);
+console.log(total);
+
+// Array de arrays
+let dato = [["pablo", 123], ["rodri", 456], ["ariel", [789, 101112]]];
+console.log(dato[0][1]);
+console.log(dato[2][1][1]);
