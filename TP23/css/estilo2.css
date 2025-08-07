@@ -1,0 +1,9 @@
+#eventosMouse{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    font-size: 3em;
+}

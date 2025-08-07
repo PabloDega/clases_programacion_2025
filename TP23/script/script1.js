@@ -32,5 +32,13 @@ h2.textContent = "Nuevo título desde JS";
 document.querySelector("#textoInput").value = "Texto agregado desde JS";
 
 document.querySelector("#divEstilo").style.backgroundColor = "red";
+document.querySelector("#divEstilo").style.width = "20px";
+document.querySelector("#divEstilo").style.height = "20px";
+document.querySelector("#divEstilo").style.border = "4px solid black";
 
 
+document.querySelector("#destino").innerHTML += "<p>Texto agregado desde JS</p>";
+
+const element = document.createElement("p");
+element.textContent = "Parrafo creado con createElement";
+document.querySelector("#destino").appendChild(element);
