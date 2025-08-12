@@ -6,4 +6,14 @@
     height: 500px;
     background-color: orange;
     font-size: 3em;
+    position: relative;
+}
+
+#eventosMouse span{
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
