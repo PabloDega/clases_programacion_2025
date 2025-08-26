@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #335538;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+.caja{
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+}
+.caja h1{
+    font-size: 1.2em;
+}
+.caja button{
+    padding: 0.5em;
+    border: none;
+    background-color: #335538;
+    color: #fff;
+    cursor: pointer;
+}
+.caja p{
+    border: 2px solid #335538;
+    padding: 0.5em;
+    flex-grow: 1;
+}
+.caja span{
+    display: flex;
+    gap: 1em;
+}
+.caja input{
+    padding: 0.5em;
+    border: 2px solid #335538;
+    flex-grow: 1;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
