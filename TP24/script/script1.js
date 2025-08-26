@@ -8,9 +8,11 @@ document.querySelector("#btnHorizontal").addEventListener("click", () => {
 });
 document.querySelector("#btnRojo").addEventListener("click", () => {
     console.log("Boton rojo clickeado");
+    document.querySelector("#caja1").style.backgroundColor = "red";
 });
 document.querySelector("#btnVerde").addEventListener("click", () => {
     console.log("Boton verde clickeado");
+    document.querySelector("#caja1").style.backgroundColor = "green";
 });
 document.querySelector("#btnGrande").addEventListener("click", () => {
     console.log("Boton grande clickeado");
@@ -23,7 +25,9 @@ document.querySelector("#colorTexto").addEventListener("change", () => {
 });
 document.querySelector("#btnOcultar").addEventListener("click", () => {
     console.log("Boton ocultar clickeado");
+    document.querySelector("#caja3 span").style.display = "none";
 });
 document.querySelector("#btnMostrar").addEventListener("click", () => {
     console.log("Boton mostrar clickeado");
+    document.querySelector("#caja3 span").style.display = "block";
 });

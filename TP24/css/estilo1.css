@@ -37,6 +37,7 @@ button{
     padding: 1em;
     background-color: #fff;
     width: fit-content;
+    transition: 1s;
 }
 #caja3 span:first-child {
     background-color: darkblue;
