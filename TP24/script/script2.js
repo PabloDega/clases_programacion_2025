@@ -63,3 +63,39 @@ document.querySelector("#ver").addEventListener("click", () => {
         });
     }
 });
+
+document.querySelectorAll("#carrito .agregar").forEach(btn => {
+    btn.addEventListener("click", e => {
+        //console.log(`Boton ${e.target.dataset.producto} clickeado`);
+        //console.log(`Ubicación en array ${e.target.dataset.index}`);
+        if(carrito[e.target.dataset.index] > 9){
+            document.querySelector("#carrito #mensaje").textContent = "El maximo de remeras por color es de 10 unidades";
+            return;
+        }
+        carrito[e.target.dataset.index]++;
+        actualizarContador();
+        document.querySelector("#carrito #mensaje").textContent = "...respuesta";
+    });
+});
+
+const carrito = [0, 0, 0];
+let cantidad = 0;
+
+function actualizarContador(){
+    cantidad++;
+    document.querySelector("#cantidadCarrito").textContent = cantidad;
+}
+
+document.querySelector("#carrito #ver").addEventListener("click", (e) => {
+    const texto = `Remeras rojas: ${carrito[0]} <br> Remeras verdes: ${carrito[1]} <br> Remeras azules: ${carrito[2]}`;
+    document.querySelector("#carrito #mensaje").innerHTML = texto;
+});
+
+document.querySelector("#carrito #vaciar").addEventListener("click", (e) => {
+    document.querySelector("#carrito #mensaje").textContent = "...respuesta";
+    document.querySelector("#cantidadCarrito").textContent = 0;
+    carrito[0] = 0;
+    carrito[1] = 0;
+    carrito[2] = 0;
+    cantidad = 0;
+});

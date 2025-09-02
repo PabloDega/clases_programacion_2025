@@ -49,3 +49,19 @@ body{
     flex-direction: column;
     gap: 0.5em;
 }
+#carrito span span{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: #335538 2px solid;
+    padding: 0.5em;
+    transition: 1s;
+    cursor: pointer;
+}
+#carrito span span:hover{
+    background-color: #699c70;
+}
+#carrito div{
+    display: flex;
+    font-weight: bold;
+}
