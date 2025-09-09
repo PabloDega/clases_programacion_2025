@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas de datos personales</title>
+    <link rel="stylesheet" href="css/fichas.css">
+</head>
+<body>
+    <h1>Fichas de datos personales</h1>
+
+    <div id="ingreso" class="caja">
+        <h2>Datos personales</h2>
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="apellido" placeholder="apellido">
+        <input type="text" id="telefono" placeholder="telefono">
+        <div class="btn" id="registrar">Registrar</div>
+    </div>
+
+    <div id="vista" class="caja">
+        <h2>Registros</h2>
+        <span>
+            <div class="btn" id="mostrar">Mostrar</div>
+            <div class="btn" id="vaciar">Vaciar</div>
+        </span>
+        <div id="salida">
+            <div class="ficha">
+                <span>Nombre: Pablo</span>
+                <span>Apellido: Deganis</span>
+                <span>Telefono: 1123190348</span>
+            </div>
+            <div class="ficha">
+                <span>Nombre: Lucio</span>
+                <span>Apellido: Deganis</span>
+                <span>Telefono: 11589642579</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="errores">Error de Ejemplo!!!</div>
+
+    <script src="script/fichas.js"></script>
+</body>
+</html>

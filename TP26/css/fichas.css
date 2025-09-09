@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: indianred;
+    padding: 2em;
+}
+h1{
+    color: white;
+    border-bottom: 4px solid white;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    padding: 1em;
+    max-width: 400px;
+}
+.caja input{
+    padding: 0.3em;
+}
+.btn{
+    background-color: indianred;
+    font-weight: 600;
+    color: white;
+    padding: 0.5em;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: rgb(99, 38, 38);
+}
+#vista span{
+    display: flex;
+    gap: 1em;
+}
+#errores{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer
+}
+#salida{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.ficha{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: rgb(255, 157, 157);
+}

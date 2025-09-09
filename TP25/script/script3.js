@@ -32,3 +32,22 @@ let animales = [];
  animales.push(new Animal("Hipopotamo", "Gris", 2000, 2000, "Asia"));
  animales.push(new Animal("Jirafa", "Amarillo", 6000, 800, "Asia"));
  animales.push(new Animal("Jabalí", "Negro", 1500, 300, "America"));
+
+console.clear();
+console.log(animales);
+
+// Metodo find()
+
+function buscarAnimal(nombre){
+    return animales.find((info) => info.nombre === nombre)
+}
+
+console.log(buscarAnimal("Elefante"));
+
+// metodo filter()
+
+function filtrarAnimales(region){
+    return animales.filter((info) => info.region === region);
+}
+
+console.log(filtrarAnimales("America"));
