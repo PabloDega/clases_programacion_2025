@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 :root{
-    --colorPrimario: darkgreen;
-    --colorSecundario: green;
-    --colorTerciario: cyan;
+    --colorPrimario: rgb(4, 45, 51);
+    --colorSecundario: rgb(10, 80, 134);
+    --colorTerciario: rgb(40, 240, 180);
 }
 body{
     background-color: var(--colorPrimario);
