@@ -59,3 +59,25 @@ let cursos = [
     alumnos: [2, 3, 4]
   }
 ];
+
+cursos.forEach((dato) => {
+  document.querySelector("#cursos").innerHTML += `<div class="curso">
+            <h1>${dato.nombre}</h1>
+            <span>Cantidad de alumnos: ${dato.alumnos.length}</span>
+            <span>Curso calificado: ${dato.calificado}</span>
+            <div class="btn" data-curso="${dato.id}">Detalles</div>
+        </div>`;
+});
+
+document.querySelectorAll("#cursos .btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log("Boton detalle presionado", e.target.dataset);
+    mostrarCurso(e.target.dataset.curso);
+  })
+});
+
+function mostrarCurso(id) {
+  console.log("Funcion mostrar con Id: ", id);
+  const cursoElegido = cursos.find((dato) => dato.id == id);
+  console.log(cursoElegido);
+}
