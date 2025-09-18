@@ -32,6 +32,9 @@ document.querySelector("#registrar").addEventListener("click", () => {
     telefono.value = "";
 
     document.querySelector("#vista h2").innerHTML = `Registros <span>${fichas.length}</span>`;
+
+    // limpiar registros mostrados
+    document.querySelector("#salida").innerHTML = "";
     console.log("Finaliza la función");
 });
 
@@ -47,6 +50,7 @@ function mostrarError(txt){
 }
 
 document.querySelector("#mostrar").addEventListener("click", () => {
+    document.querySelector("#salida").innerHTML = "";
     //console.log("Click a btn mostrar");
     if(fichas.length === 0){
         mostrarError("No hay registros para mostrar");
@@ -59,4 +63,17 @@ document.querySelector("#mostrar").addEventListener("click", () => {
                 <span>Telefono: ${objeto.telefono}</span>
             </div>`;
     });
+});
+
+document.querySelector("#vaciar").addEventListener("click", () => {
+    // vaciar los inputs
+    document.querySelector("#nombre").value = "";
+    document.querySelector("#apellido").value = "";
+    document.querySelector("#telefono").value = "";
+    // vaciar elem de salida
+    document.querySelector("#salida").innerHTML = "";
+    // vaciar array de fichas
+    fichas = [];
+    // resetear contador
+    document.querySelector("#vista h2").innerHTML = `Registros`;
 })

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorPrimario: darkgreen;
+    --colorSecundario: green;
+    --colorTerciario: cyan;
+}
+body{
+    background-color: var(--colorPrimario);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2em;
+    color: white;
+}
+h1{
+    border-bottom: 4px solid white;
+}
+h2{
+    border-bottom: 2px solid white;
+}
+#cursos{
+    display: flex;
+    gap: 1em;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--colorTerciario);
+    padding: 1em;
+}
+.curso h1{
+    border: none;
+    font-size: 1.4em;
+    color: var(--colorSecundario);
+}
+.curso .btn{
+    display: flex;
+    width: fit-content;
+    background-color: var(--colorSecundario);
+    padding: 0.5em;
+    cursor: pointer;
+}
+#detalles{
+    background-color: var(--colorTerciario);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+#detalles h1, #detalles h2{
+    font-size: 1.4em;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--colorSecundario);
+    color: var(--colorSecundario);
+}
+#detalles h2{
+    font-size: 1.1em;
+}
+#alumnos{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.alumno{
+    background-color: var(--colorTerciario);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--colorSecundario);
+}
