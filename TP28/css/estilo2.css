@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: firebrick;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#cont{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#cont > span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: firebrick;
+    color: white;
+    padding: 1em;
+}
+input{
+    padding: 0.3em;
+}
+.btn{
+    background-color: rgb(72, 6, 6);
+    color: white;
+    padding: 0.5em;
+    width: fit-content;
+    cursor: pointer;
+    display: inline-block;
+}
+table{
+    border: 2px solid darkslategray;
+    border-collapse: collapse;
+}
+table thead th, table tbody td{
+    border: 1px solid darkslategray;
+    padding: 0.3em;
+}
+.verde{
+    background-color: green;
+}
+.naranja{
+    background-color: darkorange;
+}
+.azul{
+    background-color: darkblue;
+    color: white;
+}
