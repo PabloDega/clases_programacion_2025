@@ -2,7 +2,6 @@ console.log("Archivo script1.js vinculado");
 
 fetch("./data/data.json")
     .then((res) => {
-        //console.log(res);
         if (!res.ok) {
             throw new Error(`Error en el fetch: ${res.status} - ${res.statusText}`);
         }

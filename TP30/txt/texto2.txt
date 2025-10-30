@@ -1,0 +1,2 @@
+<h2>Texto 2</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam in perferendis repellat sapiente, ullam ab sunt accusantium dignissimos aperiam quos, eius dolorem.
