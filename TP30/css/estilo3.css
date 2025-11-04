@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(195, 249, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    border-bottom: 2px solid black;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    padding: 2em;
+}
+.btn{
+    background-color: rgb(54, 68, 0);
+    color: white;
+    padding: 0.7em;
+    width: fit-content;
+    cursor: pointer;
+}
