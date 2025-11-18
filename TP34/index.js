@@ -1,1 +1,1 @@
-console.log("Test de nodemon en la terminal");
+console.log("Test de nodemon en terminal");
