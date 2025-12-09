@@ -34,6 +34,9 @@ nav a{
 main{
     flex-grow: 1;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 footer{
     background-color: seagreen;
@@ -46,4 +49,40 @@ form{
 form input{
     padding: 0.3em;
     border-radius: 0.3em;
+}
+.btn{
+    display: flex;
+    padding: 0.6em;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: lightseagreen;
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgb(26, 152, 145);
+}
+
+.pop{
+    padding: 0.5em;
+    width: 80vw;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.pop#error{
+    background-color: darkred;
+    color: white;
+}
+.pop#msg{
+    background-color: darkblue;
+    color: white;
 }

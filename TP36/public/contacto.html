@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="error" class="pop"></div>
+    <div id="msg" class="pop"></div>
     <header>Home de mi sitio</header>
     <nav>
         <a href="index.html">Home</a>
@@ -18,11 +20,13 @@
         <form action="/contacto" method="post">
             <input type="text" name="nombre" placeholder="Nombre">
             <input type="text" name="telefono" placeholder="Numero de telefono">
-            <input type="submit" value="Enviar">
+            <input type="submit" class="btn" value="Enviar">
         </form>
+        <div class="btn">Ver registros</div>
     </main>
     <footer>
         Powered by ProfePablo &copy;2026
     </footer>
+    <script src="script/leerParamsURL.js"></script>
 </body>
 </html>

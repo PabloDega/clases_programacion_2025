@@ -1,6 +1,7 @@
+import "dotenv/config";
 import express from "express";
 import {rutas} from "./src/routes/site.routes.js";
-import "dotenv/config";
+
 const PORT = 4001;
 
 const app = express();

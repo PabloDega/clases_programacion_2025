@@ -1,10 +1,11 @@
 {
   "name": "tp36",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.7",
+  "description": "TP36 del curso Backend con Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2S": "pm2 start index.js --name TP36 && pm2 monit"
   },
   "keywords": [],
   "author": "",
