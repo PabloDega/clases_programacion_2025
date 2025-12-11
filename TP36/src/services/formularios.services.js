@@ -11,3 +11,24 @@ export const insertDatosFormulario = async (datos) => {
         return {error: true, msg: err.msg};
     }
 }
+
+export const selectUsuarios = async() => {
+    try {
+        const resp = await query("SELECT * FROM usuarios WHERE eliminado = 0");
+        console.log(resp[0]);
+        return {error: false, data: resp[0]}
+    } catch (err) {
+        console.error("Error: " + err);
+        return {error: true, msg: err.msg};
+    }
+}
+
+export const selectContactos = async() => {
+    try {
+        const resp = await query("SELECT * FROM formulario_contacto");
+        return {error: false, data: resp[0]}
+    } catch (error) {
+        console.log("Error al leer BD");
+        return {error: true}
+    }
+}
